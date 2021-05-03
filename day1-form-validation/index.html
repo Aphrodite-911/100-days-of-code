@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1: Form Validation</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1>Sign up!</h1>
+        <form name="myForm" action="/100-days-of-code/day1-form-validation/script.js" onsubmit="return validateForm()" method="POST">
+        <input type="text" name="firstName" id="firstName" placeholder="First name" min="3-25">
+        <input type="text" name="lastName" id="lastName" placeholder="Last name" min="3-25">
+        <input type="text" name="username" id="username" placeholder="Username" required>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="password" name="password" id="password" placeholder="Password" minlength="6" required>
+        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password" minlength="6" required>
+        <label for="checkbox">
+            <input type="checkbox" name="rememberMe" id="rememberMe" value="yes"> Remember me
+        </label>
+        <input id="submit" type="submit" value="Sign Up"/>
+        </form>
+    </div>
+</body>
+</html>
